@@ -1,0 +1,31 @@
+body
+{
+    background-color: orange;
+    color: black;
+    font-size: 12pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1
+{
+    background-color: black;
+    color:white;
+}
+
+a
+{
+    color: red;
+}
+a:hover
+{
+    color: blue;
+}
+p.website
+{
+    font-weight: bold;
+    color: black;
+}
+p.youtube
+{
+    font-weight: bolder;
+    
+}

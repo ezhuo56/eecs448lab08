@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>CSS Manipulation</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+  <p id="textC" style="border: 0px solid white;"> Hello. I'm changable text. </p> 
+ <div>
+Border Red value (0-255):<input type = "text"  id="bordRed"> 
+Border Green value (0-255):<input type = "text"  id="bordGreen">  
+Border Blue value (0-255):<input type = "text"  id="bordBlue">
+ Border Width Value: <input type = "text"  id="bordWidth">
+ <button onclick="changeBorder()"> Set Border</button> 
+
+ </div>
+<div>
+    <p>Background Red value (0-255):<input type = "text"   id="backRed"> 
+        Background Green value (0-255):<input type = "text"  id="backGreen">  
+        Background Blue value (0-255):<input type = "text"  id="backBlue"> 
+        </p>
+</div>
+<button onclick="changeBackground()"> Set Background Color</button>
+
+</body>   
+
+<script>
+    function changeBorder()
+{
+    
+    var bordRed = document.getElementById("bordRed").value;
+    var bordGreen = document.getElementById("bordGreen").value;
+    var bordBlue = document.getElementById("bordBlue").value;
+    var bordWidth = document.getElementById("bordWidth").value;
+    var textTag = document.getElementById("textC");
+    var border = 'rgb(' + bordRed + ',' + bordGreen + ',' + bordBlue + ')';
+    var bordrWidth = bordWidth + "px";
+    textTag.style.borderColor= border;
+    textTag.style.borderWidth = bordrWidth;
+  
+  
+
+}   
+function changeBackground()
+{
+    var backRed = document.getElementById("backRed").value;
+    var backGreen =  document.getElementById("backGreen").value;
+    var backBlue = document.getElementById("backBlue").value;
+    var textTag = document.getElementById("textC");
+    var backgroundCol = 'rgb(' + backRed + ',' + backGreen + ',' + backBlue + ')';
+    textTag.style.backgroundColor = backgroundCol;
+ 
+
+    
+} </script>
+ 
+</html>
